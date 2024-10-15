@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button실습 정답</title>
+    <style>
+        body {
+            background-color: #00002e;
+        }
+
+        ul {
+            display: flex;
+            margin: 50px 0
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .btn {
+            text-decoration: none;
+            color: #fff;
+            font-size: 24px;
+            padding: 16px 100px;
+            /* a태그 각각의 요소의 값, 위아래가 16, 양옆이 100인것임 */
+            border: 1px solid transparent;
+            /* transparent 투명색, 
+            투명색으로 하는 이유 : 매끄럽게 보이게 하기 위함  */
+            margin-right: 16px;
+            position: relative;
+            transition: 0.4s;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 0%;
+            height: 1px;
+            background-color: #06069e;
+            transition: 0.4s;
+        }
+
+        .btn:hover::before {
+            width: 100%;
+        }
+
+        .btn::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 0%;
+            height: 1px;
+            background-color: #06069e;
+            transition: 0.4s;
+        }
+
+        .btn:hover::after {
+            width: 100%;
+        }
+
+        .btn:hover {
+            border-left: 1px solid #06069e;
+            border-right: 1px solid #06069e;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="#" class="btn">About</a>
+        </li>
+        <li>
+            <a href="#" class="btn">Contact</a>
+        </li>
+        <li>
+            <a href="#" class="btn">Mail</a>
+        </li>
+    </ul>
+</body>
+</html>

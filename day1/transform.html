@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            
+        }
+
+        article {
+            border: 1px solid #000;
+            margin-bottom: 16px;
+        }
+
+        .translate > div {
+            background-color: bisque;
+            margin: 16px;
+        }
+
+        .scale > div {
+            background-color: darkgreen;
+            margin: 16px;
+        }
+
+
+        .skew > div {
+            background-color: black;
+            margin: 16px;
+        }
+
+        .translateX {
+            transform: translateX(100%);
+            /* position을 넣지 않았기 때문에
+            컨텐츠의 너비, 높이 기준으로 x축으로 옮겨진 것 */
+        }
+
+        .translateY {
+            transform: translateY(-100px);
+        }
+
+        .translateA {
+            transform: translate(50px, -100%);
+            /* margin 값 때문에 위치가 맞지 않는 것.
+            margin값을 빼주면 딱 맞게 된다. */
+        }
+
+        .scaleX {
+            transform: scaleX(1.5);
+            /* X축 기준이기 때문에 가운데 기준으로 1.5배 커진 것 */
+        }
+
+        .scaleY {
+            transform: scaleY(0.7);
+            /* 200px의 70% 줄여진 것 */
+        }
+
+        .scaleA {
+            transform: scale(0.3, 1);
+        }
+
+        .skewX {
+            transform: skewX(50deg);
+        }
+        /* 가로축의 각도가 움직인 것 */
+
+        .skewY {
+            transform: skewY(150deg);
+        }
+
+        .rotate {
+            transform: rotate(45deg);
+            background-color: blueviolet;
+        }
+        /* 요소를 각도deg를 사용하여 돌리는 것 */
+    </style>
+</head>
+<body>
+    <article class="translate">
+        <div class="translateX"></div>
+        <div class="translateY"></div>
+        <div class="translateA"></div>
+        <!-- A는 all 이라는 뜻 -->
+    </article>
+
+    <article class="scale">
+        <div class="scaleX"></div>
+        <div class="scaleY"></div>
+        <div class="scaleA"></div>
+    </article>
+
+    <article class="skew">
+        <div class="skewX"></div>
+        <div class="skewY"></div>
+        <div class="skewA"></div>
+        <!-- skew 많이 사용하지는 않는다. -->
+    </article>
+
+    <article>
+        <div class="rotate"></div>
+    </article>
+</body>
+</html>
