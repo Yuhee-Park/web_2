@@ -13,14 +13,21 @@
             position: relative;
         }
 
+        .box {
+            width: 320px;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+        
         img {
             width: 320px;
             height: 400px;
             display: flex;
             content: '';
             position: relative;
-        }
-
+            overflow: hidden;
+        }  /* 영역 이상은 안 보여줄거야 할 때 = overflow */
 
         h2 {
             position: absolute;
@@ -77,21 +84,28 @@
             transition: 0.3s;
         }
 
+        img:hover {
+            transform: scale(1.1); 
+            transition: 0.7s;
+        }
+
+        /* 커지게 하려면 트랜스폼-스케일 */
+
     </style>
 </head>
 <body>
     <section>
-        <div>
+        <div class="box">
             <img src="./자코모실습1.jpg" alt="">
             <h2>Leather</h2>
             <p>프리미엄가죽</p>
         </div>
-        <div>
+        <div class="box">
             <img src="./자코모실습2.jpg" alt="">
             <h2>Febric</h2>
              <p>기능성패브릭</p>
         </div>
-        <div>
+        <div class="box">
             <img src="./자코모실습3.jpg" alt="">
             <h2>Material</h2>
             <p>올바른 내장제</p>

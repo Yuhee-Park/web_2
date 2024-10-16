@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시맨틱태그실습</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        .logo {
+            display: flex;
+            position: relative;
+            width: 100%;
+            height: 80px;
+            background-color: blanchedalmond;
+            margin: 10px;
+        }
+
+        .menu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 10px;
+            width: 80px;
+            height: 80px;
+            background-color: coral;
+            text-align: center;
+            list-style: none;
+            align-content: center;
+        }
+
+        .menu:nth-child(1) {
+            top: 0;
+            left: 85%;
+        }
+
+        .menu:nth-child(2) {
+            top: 0;
+            left: 90%;
+        }
+
+        .menu:nth-child(3) {
+            top: 0;
+            left: 95%;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+
+        }
+        .box {
+            width: 1400px;
+            height: 100px;
+            margin: 10px;
+            border: solid #f00c0c 1px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        aside {
+            width: 40%;
+        }
+
+        footer {
+            width: 100%;
+            height: 80px;
+            background-color: bisque;
+            text-align: center;
+            align-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="logo">logo
+                <li class="menu">
+                    <a href="#">메뉴</a>
+                </li>
+                <li class="menu">
+                    <a href="#">메뉴</a>
+                </li>
+                <li class="menu">
+                    <a href="#">메뉴</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <nav class="container"> -->
+    <div class="flex">
+        <main>
+            <section>
+                <figure class="box">
+                    <h2>옆집에 고양이가 침입했다</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla exercitationem qui nihil quod
+                        eligendi dolores vel? Cupiditate perferendis, qui ex mollitia, assumenda dolor itaque dolorum
+                        nobis quisquam veritatis, asperiores recusandae!</p>
+                </figure>
+
+                <figure class="box">
+                    <h2>바다에서 쉬고있는 점박이물범</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus explicabo atque
+                        mollitia, neque distinctio quidem accusantium libero rem dolore aspernatur doloremque ea esse
+                        veritatis, adipisci asperiores sit, rerum ut quod?</p>
+                </figure>
+
+                <figure class="box">
+                    <h2>건강을 지키는 생활습관 10가지</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates neque sapiente, molestias
+                        corrupti iste ab commodi dicta assumenda quos fuga veniam voluptatem minima possimus repellat ut
+                        magnam at magni mollitia?</p>
+                </figure>
+
+                <figure class="box">
+                    <h2>아이돌커플탄생</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, similique! Numquam obcaecati
+                        est eligendi, saepe, voluptates possimus atque quisquam laboriosam aliquid, maxime corrupti quis
+                        a sapiente totam eos? Mollitia, laudantium!</p>
+                </figure>
+
+                <figure class="box">
+                    <h2>종합영양제 과연 효과 있을까?</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas saepe dolores aut iste
+                        asperiores consequatur totam fugit exercitationem quas molestiae officiis optio laudantium, nemo
+                        unde fuga modi? Excepturi, nemo sint.</p>
+                </figure>
+
+                <figure class="box">
+                    <h2>수요일 직장인 피로도 99%라는 연구결과...</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel at perferendis dolore quasi, iste
+                        quia, animi magni itaque id aliquid sapiente saepe rem harum non odio, minus voluptatem corrupti
+                        sunt.</p>
+                </figure>
+            </section>
+        </main>
+
+        <aside>
+            <h2>Right aside</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quidem eveniet possimus quae, nesciunt
+            qui
+            debitis officia aliquid amet deleniti officiis voluptas deserunt quasi exercitationem? Distinctio ipsam est
+            iste
+            quisquam!
+            <div>직접입력</div>
+            <h3>광고</h3>
+            <p>광고내용</p>
+        </aside>
+    </div>
+    <!-- </nav> -->
+
+    <footer>푸터입니다.</footer>
+</body>
+
+</html>
