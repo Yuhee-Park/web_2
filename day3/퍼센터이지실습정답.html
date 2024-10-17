@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퍼센테이지실습정답</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        section {
+            width: 100%;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+            border: 1px solid rgb(231, 189, 135) ;
+            margin: 16px;
+            padding: 0 16px;
+            height: 80px;
+            position: relative;
+        }
+
+        li::before {
+            content: '';
+            width: 0%;
+            height: 80px;
+            position: absolute;
+            background-color: rgb(217, 217, 217);
+            display: block;
+            top: 0;
+            z-index: -1;
+            transition: 0.7s;
+            left: 0
+        }
+
+        li:nth-child(1):hover::before {
+            width: 20%;
+        }
+
+        li:nth-child(2):hover::before {
+            width: 40%;
+        }
+
+        li:nth-child(3):hover::before {
+            width: 60%;
+        }
+
+        li:nth-child(4):hover::before {
+            width: 80%;
+        }
+
+        li:nth-child(5):hover::before {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>웹부터 포트폴리오까지!</h1>
+        <ul>
+            <li>
+                <h2>
+                    20%
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    40%
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    60%
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    80%
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    100%
+                </h2>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>

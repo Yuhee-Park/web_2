@@ -15,18 +15,18 @@
             display: flex;
         }
 
-        .logo {
+        h1 {
             display: flex;
             position: relative;
             width: 100%;
             height: 80px;
             background-color: blanchedalmond;
             margin: 10px;
+            padding: 10px;
         }
 
         .menu {
             position: absolute;
-            top: 0;
             left: 0;
             margin: 10px;
             width: 80px;
@@ -35,6 +35,7 @@
             text-align: center;
             list-style: none;
             align-content: center;
+            padding: 5px;
         }
 
         .menu:nth-child(1) {
@@ -62,6 +63,11 @@
             height: 100px;
             margin: 10px;
             border: solid #f00c0c 1px;
+            padding: 10px;
+        }
+
+        h2 {
+            margin: 10px;
         }
 
         .flex {
@@ -85,7 +91,8 @@
 <body>
     <header>
         <nav>
-            <ul class="logo">logo
+            <h1>logo</h1>
+            <ul>
                 <li class="menu">
                     <a href="#">메뉴</a>
                 </li>
