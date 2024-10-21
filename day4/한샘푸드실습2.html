@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한샘푸드실습2
+    </title>
+    <style>
+
+@font-face {
+    font-family: 'NanumSquareNeoVariable';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeoBold';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.ttf) format("truetype");
+}
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            width: 500px;
+            height: 400px;
+            background-color: rgb(246, 203, 169);
+            border-radius: 30px;
+            position: relative;
+        }
+
+        li {
+            list-style: none;
+            padding: 10px;
+        }
+
+        h2 {
+            font-size: 54px;
+            font-family: 'NanumSquareNeoVariable';
+        }
+
+        span {
+            font-size: 20px;
+            font-family: 'NanumSquareNeoBold';
+        }
+
+        h2, span {
+            padding: 10px;
+            margin: 10px;
+            color: rgb(100, 51, 33);
+        }
+
+        figure {
+            display: block;
+            width: 100%;
+            position: absolute;
+            bottom: -90px;
+            right: 10px;
+            left: 100px;
+            translate: 0.5s;
+        }
+
+        figure::after {
+            content: '';
+            display: block;
+            width: 100%;
+            position: absolute;
+            bottom: -50px;
+            right: 10px;
+            left: 100px;
+        }
+
+        figure::after:hover {
+            width: 100%;
+            height: 200px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <ul>
+            <li class="text_area">
+                <h2>10+</h2>
+                <span>10가지의 다양한 반찬 제공으로
+                    <br>
+                    한끼의 식사도 정성스럽게
+                </span>
+
+                <figure>
+                    <img src="./도시락.png" alt="">
+                </figure>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>
