@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플러스에서엑스로</title>
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            height: 50px;
+            background-color: grey;
+            padding: 20px;
+        }
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            color: #fff;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul > li {
+            margin: 10px;
+            list-style: none;
+        }
+
+        figure {
+            font-size: 30px;
+        }
+
+        .plus_btn {
+            translate: 0.2s;
+        }
+
+        .plus_btn:hover {
+            animation-name: plus_animation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes plus_animation {
+            0% {
+                transform: rotate(360deg);
+            }
+
+            50% {
+                transform: rotate(10deg);
+            }
+
+            100% {
+                transform: rotate(-360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h2>LOGO</h2>
+            <ul>
+                <li>메뉴1</li>
+                <li>메뉴2</li>
+                <li>메뉴3</li>
+                <li>메뉴4</li>
+            </ul>
+            <figure class="plus_btn">+</figure>
+        </div>
+    </header>
+</body>
+</html>
