@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ball</title>
+    <style>
+        .container {
+            width: 500px;
+            height: 500px;
+            display: flex;
+            position: relative;
+        }
+
+        .ball {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            animation-name: ball;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            position: absolute;
+            bottom: 0;
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 10px 10px 20px #000
+            
+        }
+
+        .ball:nth-child(1) {
+            animation-timing-function: ease;
+            position: absolute;
+            left: 50px;
+            background-color: cornflowerblue;
+        }
+
+        .ball:nth-child(2) {
+            animation-timing-function: ease
+            position: absolute;
+            left: 200px;
+            background-color: #CCC;
+        }
+
+        .ball:nth-child(3) {
+            animation-timing-function: ease-in-out
+            position: absolute;
+            left: 350px;
+            background-color: #000;
+        }
+
+        @keyframes ball {
+            0% {
+                transform: translateX(40%);
+            }
+
+        
+            100% {
+                transform: translateY(-200%);
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
