@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고양이가 지나가요</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        button {
+            width: 200px;
+            height: 60px;
+            background-color: blanchedalmond;
+            padding: 16px;
+            margin: 16px;
+            font-size: 16px;
+            border-radius: 10px;
+        }
+
+        button > a {
+            color: #000;
+            text-decoration-line: none;
+        }
+
+        button:focus {
+            animation-name: slide;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(1, 0.21, 0.56, 1.64)
+        }
+
+        ul {
+            display: flex;
+            width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        li {
+            list-style: none;
+            height: 200px;
+            min-width: 268px;
+            margin: 0 16px;
+            animation-name: slide;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(1, 0.21, 0.56, 1.64)
+        }
+
+        li:nth-child(1) {
+            background: url(./1.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(2) {
+            background: url(./2.jpeg);
+            background-size: cover;
+        }
+
+        li:nth-child(3) {
+            background: url(./3.webp);
+            background-size: cover;
+        }
+
+        li:nth-child(4) {
+            background: url(./4.webp);
+            background-size: cover;
+        }
+
+        li:nth-child(5) {
+            background: url(./5.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(6) {
+            background: url(./6.png);
+            background-size: cover;
+        }
+
+        li:nth-child(7) {
+            background: url(./7.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(8) {
+            background: url(./8.jpg);
+            background-size: cover;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translate(-100%);
+            }
+
+            100% {
+                transform: translate(0);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <button>
+            <a href="#">고양이가 지나가요</a>
+        </button>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+</body>
+</html>

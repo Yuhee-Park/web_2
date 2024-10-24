@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에그드랍실습</title>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 70px;
+        text-align: center;
+    }
+
+    figure {
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+        height: 500px;
+    }
+
+    .text_area {
+        width: 300px;
+        height: 180px;
+        padding: 10px;
+        position: absolute;
+        bottom: 0;
+        left: 1000px;
+        text-align-last: bottom;
+    
+    }
+
+    .text_area > h3 {
+        margin: 16px 0;
+    }
+
+    img {
+        width: 1000px;
+        height: 700px;
+        animation: img_ani 3s 1;
+
+    }
+
+    @keyframes img_ani {
+        0% {
+            transform: translateX(-700px);
+        }
+
+        100% {
+            transform: translate(0);
+        }
+    }
+</style>
+</head>
+<body>
+    <section>
+        <h2>Egg Makes Better</h2>
+        <figure>
+            <img src="./img_better.jpg" alt="plate">
+            <div class="text_area">
+                <h3>일상의 수준을 높이다</h3>
+                <p>현대인에게 필요한 철분, 
+                    <br>
+                    아미노산 등의 풍부한 영양소가 함유된
+                    <br> 
+                    프리미엄 무 항생제 계란만 엄격하게 
+                    <br>
+                    사용한 맛있는 스크럼블 에그로 건강한 
+                    <br>
+                    한끼를 요리합니다.</p>
+            </div>
+        </figure>
+    </section>
+</body>
+</html>

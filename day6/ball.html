@@ -19,43 +19,48 @@
             animation-name: ball;
             animation-duration: 2s;
             animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
             position: absolute;
             bottom: 0;
             margin: 10px;
             padding: 10px;
-            box-shadow: 10px 10px 20px #000
+            box-shadow: 10px 10px 15px #000
             
         }
 
         .ball:nth-child(1) {
-            animation-timing-function: ease;
             position: absolute;
             left: 50px;
-            background-color: cornflowerblue;
+            background-color: rgb(114, 202, 216);
+            animation-delay: 0.2s;
         }
 
         .ball:nth-child(2) {
-            animation-timing-function: ease
             position: absolute;
             left: 200px;
-            background-color: #CCC;
+            background-color: rgb(114, 202, 216);
+            animation-delay: 0.4s;
         }
 
         .ball:nth-child(3) {
-            animation-timing-function: ease-in-out
             position: absolute;
             left: 350px;
-            background-color: #000;
+            background-color: rgb(114, 202, 216);
+            animation-delay: 0.5s;
         }
 
         @keyframes ball {
             0% {
-                transform: translateX(40%);
+                transform: translateY(0);
             }
 
         
+            50% {
+                transform: translateY(-250px);
+            }
+
             100% {
-                transform: translateY(-200%);
+                transform: translateY(0);
             }
 
         }
