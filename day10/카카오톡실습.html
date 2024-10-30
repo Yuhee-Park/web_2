@@ -12,17 +12,82 @@
             margin: 0;
         }
 
-        .header_1 {
+        section {
             display: flex;
-            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 16px;
+            margin: 16px;
+            align-items: center;
         }
 
+        section > h1 {
+            font-size: 38px;
+            font-weight: normal;
+            width: 200px;
+            text-align: center;
+            margin: 0 50px;
+        }
+
+        ul {
+            display: flex;
+
+        }
+
+        ul > li {
+            margin: 16px;
+            list-style: none;
+        }
+
+        ul > li > a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+            font-weight: normal;
+            margin: 16px;
+            width: 50px;
+        }
+
+        .header1_right_box {
+            display: flex;
+            width: 250px;
+            margin: 25px;
+        }
+
+        figure {
+            display: flex;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article {
+            display: flex;
+            justify-content: space-between;
+            padding: 16px;
+            margin: 16px;
+            align-items: center;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .header2_right_box {
+            display: flex;
+            padding: 16px;
+        }
+
+        .header2_right_box > p {
+            margin: 10px;
+        }
+
+        @media (max-width: 1440px) {
+            
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <div class="header_1">
+        <section>
             <h1>kakao</h1>
             <ul>
                 <li>
@@ -56,10 +121,9 @@
                     </a>
                 </li>
             </ul>
-            </nav>
             <div class="header1_right_box">
                 <figure>
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
                 </figure>
                 <figure>
                     <i class="fa-solid fa-globe fa-2xl"></i>
@@ -68,19 +132,19 @@
                     <i class="fa-regular fa-moon fa-2xl"></i>
                 </figure>
             </div>
-
-            <div class="header_2">
-                <h2>카카오톡</h2>
-                <div class="header2_right_box">
-                    <p>카톡 안녕가이드</p>
-                    <p>카톡설명서</p>
-                    <p>다운로드
-                        <span>
-                            <i class="fa-solid fa-download"></i>
-                        </span>
-                    </p>
-                </div>
+        </section>
+        <article>
+            <h2>카카오톡</h2>
+            <div class="header2_right_box">
+                <p>카톡 안녕가이드</p>
+                <p>카톡설명서</p>
+                <p>다운로드
+                    <span>
+                        <i class="fa-solid fa-download"></i>
+                    </span>
+                </p>
             </div>
+        </article>
     </header>
 </body>
 
