@@ -7,6 +7,13 @@
     <title>동아제약 실습2</title>
     <script src="https://kit.fontawesome.com/386b64400f.js" crossorigin="anonymous"></script>
     <style>
+        @font-face {
+            font-family: 'Pretendard-Regular';
+            src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+
         * {
             padding: 0;
             margin: 0;
@@ -16,9 +23,14 @@
             background: url(./keyvisual02_CUSTOMERcolor_MOBILE.jpg);
             height: 100vh;
             background-size: cover;
+            font-family: 'Pretendard-Regular';
         }
 
-        .pc_header_top > ul {
+        /* .pc_header {
+            display: none;
+        } */
+
+        .pc_header_top>ul {
             display: flex;
             font-size: 15px;
             justify-content: end;
@@ -27,9 +39,10 @@
             border-bottom: 1px solid #000;
         }
 
-        .pc_header_top > ul > li {
+        .pc_header_top>ul>li {
             list-style: none;
             margin-right: 32px;
+            font-size: 16px;
         }
 
         .pc_header_bottom {
@@ -40,17 +53,17 @@
             border-bottom: 1px solid #000;
         }
 
-        .pc_header_bottom  > nav > ul {
+        .pc_header_bottom>nav>ul {
             display: flex;
         }
 
-        .pc_header_bottom  > nav > ul > li {
+        .pc_header_bottom>nav>ul>li {
             list-style: none;
             margin: 0 16px;
             font-size: 20px;
         }
 
-        .pc_header_bottom > h1 {
+        .pc_header_bottom>h1 {
             background: url(./logo_black-e98fc715585a7f605fb6de8694ddf54d.svg);
             width: 145px;
             height: 26px;
@@ -58,7 +71,7 @@
             margin-left: 32px;
         }
 
-        .pc_header_bottom > nav > ul > li > a {
+        .pc_header_bottom>nav>ul>li>a {
             color: #000;
             text-decoration: none;
             font-weight: 900;
@@ -70,7 +83,7 @@
             align-items: center;
         }
 
-        .search_box > input {
+        .search_box>input {
             border: none;
             background: none;
             width: 250px;
@@ -82,51 +95,152 @@
             border-radius: 50px;
         }
 
-        .header_right_box > div,
-        .header_right_box > figure {
+        .header_right_box>div,
+        .header_right_box>figure {
             margin: 0 32px;
         }
+
+        @media (max-width: 1440px) {
+            .pc_header_bottom>nav>ul>li {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+
+            .search_box>input {
+                width: 100px;
+            }
+
+            .header_right_box>div,
+            .header_right_box>figure {
+                margin: 0 16px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .pc_header_bottom>h1 {
+                width: 100px;
+                height: 18px;
+            }
+
+            .pc_header_bottom>nav>ul>li {
+                margin: 0 4px;
+                font-size: 12px;
+            }
+
+            .search_box {
+                padding: 8px;
+            }
+
+        }
+
+        .mo_header {
+            /* background-image: url(./logo_black-e98fc715585a7f605fb6de8694ddf54d.svg);
+            background-repeat: no-repeat; */
+            top: 16px 16px;
+            padding: 16px;
+            margin: 16px;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: solid 1px #000;
+            border-top: solid 1px #000;;
+        }
+
+        .mo_header > h1 {
+            /* padding: 16px; */
+            /* margin: 0px; */
+            width: 150px;
+            height: 30px;
+            background: url(./logo_black-e98fc715585a7f605fb6de8694ddf54d.svg) no-repeat;
+            background-size: contain;
+            /* background-position: left; */
+        }
+
+        .mo_header {
+            display: none;
+        }
+
+        .mo_header_right {
+            display: flex;
+        }
+
+        .mo_header_right > figure {
+            margin: 0 16px;
+        }
+
+        @media (max-width: 760px) {
+            .pc_header {
+                display: none;
+            }
+
+            .mo_header {
+                display: flex;
+            }
+
+            body {
+            background-position: 23%;
+        }
+        }
+
+
+
     </style>
 </head>
 
 <body>
     <header>
-        <div class="pc_header_top">
-            <ul>
-                <li>준법경영</li>
-                <li>판매약국찾기</li>
-                <li>감사제보하기</li>
-            </ul>
-        </div>
-        <div class="pc_header_bottom">
-            <h1></h1>
-            <nav>
+        <div class="pc_header">
+            <div class="pc_header_top">
                 <ul>
-                    <li><a href="#">메뉴</a></li>
-                    <li><a href="#">메뉴</a></li>
-                    <li><a href="#">메뉴</a></li>
-                    <li><a href="#">메뉴</a></li>
-                    <li><a href="#">메뉴</a></li>
-                    <li><a href="#">메뉴</a></li>
-                    <li><a href="#">메뉴</a></li>
-                    <li><a href="#">메뉴</a></li>
-                    <li><a href="#">메뉴</a></li>
+                    <li>준법경영</li>
+                    <li>판매약국찾기</li>
+                    <li>감사제보하기</li>
                 </ul>
-            </nav>
-            <div class="header_right_box">
-                <div class="search_box">
-                    <input type="text" placeholder="검색어">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="pc_header_bottom">
+                <h1></h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">메뉴</a></li>
+                        <li><a href="#">메뉴</a></li>
+                        <li><a href="#">메뉴</a></li>
+                        <li><a href="#">메뉴</a></li>
+                        <li><a href="#">메뉴</a></li>
+                        <li><a href="#">메뉴</a></li>
+                        <li><a href="#">메뉴</a></li>
+                        <li><a href="#">메뉴</a></li>
+                        <li><a href="#">메뉴</a></li>
+                    </ul>
+                </nav>
+                <div class="header_right_box">
+                    <div class="search_box">
+                        <input type="text" placeholder="검색어">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <figure>
+                        <i class="fa-solid fa-globe fa-2xl"></i>
+                        <!-- 폰트어썸의 단점은 반응형을 할 때 사이즈변경이 어려워서
+                    잘 사용하지 않는다.
+                    실무에서는 폰트어썸을 사용하지 않는다.
+                    포트폴리오를 작성할 땐 폰트어썸을 사용해도 된다. -->
+                    </figure>
+                    <figure>
+                        <i class="fa-solid fa-bars fa-2xl"></i>
+                    </figure>
                 </div>
-                <figure>
-                    <i class="fa-solid fa-globe fa-2x"></i>
-                </figure>
-                <figure>
-                    <i class="fa-solid fa-bars fa-2x"></i>
-                </figure>
             </div>
         </div>
+        <div class="mo_header">
+            <h1></h1>
+            <div class="mo_header_right">
+                <figure>
+                    <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+                </figure>
+                <figure>
+                    <i class="fa-solid fa-bars fa-2xl"></i>
+                </figure>
+            </div>
     </header>
 </body>
-
 </html>
