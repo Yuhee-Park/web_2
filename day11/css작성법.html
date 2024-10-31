@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../reset.css">
+    <title>CSS작성법</title>
+    <style>
+        /* 태그 선택자로 스타일을 쓰지 않는게 좋다.
+        class를 줘서 사용해야 한다. */
+        figure {
+            color: blue !important;
+            /* important는 사용하면 안 좋은 코드
+            :부장급 이상만 사용하는 것.
+            진짜 어쩔 수 없을 때 쓰는 기능 */
+        }
+
+        figure {
+            color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <!-- 하나의 CSS파일을 하나로 통제하는 것 : 유지관리 -->
+    <!-- 주석으로 다른 사람들이 볼 때 작업상황을 알리는 기능으로 좋다. -->
+    <!-- 공통된 박스는 최대한 같은 클래스 이름으로 -->
+
+    <figure>
+        안녕하세요
+    </figure>
+</body>
+</html>

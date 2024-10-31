@@ -12,20 +12,21 @@
             margin: 0;
         }
 
+
         section {
             display: flex;
             justify-content: space-between;
-            padding: 16px;
-            margin: 16px;
+            padding: 16px 200px;
+            /* margin: 16px; */
             align-items: center;
         }
 
-        section > h1 {
+        section>h1 {
             font-size: 38px;
             font-weight: normal;
-            width: 200px;
+            /* width: 200px; */
             text-align: center;
-            margin: 0 50px;
+            /* margin: 0 50px; */
         }
 
         ul {
@@ -33,25 +34,25 @@
 
         }
 
-        ul > li {
-            margin: 16px;
+        ul>li {
+            margin: 0 8px;
             list-style: none;
         }
 
-        ul > li > a {
+        ul>li>a {
             text-decoration: none;
             color: black;
             font-weight: bold;
             font-size: 20px;
             font-weight: normal;
-            margin: 16px;
-            width: 50px;
+            /* margin: 16px;
+            width: 50px; */
         }
 
         .header1_right_box {
             display: flex;
-            width: 250px;
-            margin: 25px;
+            /* width: 250px;
+            margin: 25px; */
         }
 
         figure {
@@ -60,14 +61,20 @@
             margin: 10px;
         }
 
+        .header2_right_box>p:nth-child(1),
+        .header2_right_box>p:nth-child(1) {
+            border-right: #ddd solid;
+        }
+
+
         article {
             display: flex;
             justify-content: space-between;
-            padding: 16px;
-            margin: 16px;
+            /* margin: 16px; */
             align-items: center;
             border-top: 1px solid #ddd;
             border-bottom: 1px solid #ddd;
+            padding: 16px 200px;
         }
 
         .header2_right_box {
@@ -75,13 +82,11 @@
             padding: 16px;
         }
 
-        .header2_right_box > p {
-            margin: 10px;
+        .header2_right_box>p {
+            /* margin: 10px; */
         }
 
-        @media (max-width: 1440px) {
-            
-        }
+        @media (max-width: 1440px) {}
 
         /* .mo_header {
             display: flex;
@@ -90,26 +95,31 @@
             padding: 16px;
             margin: 16px;
         } */
+        .mo_header {
+            display: none;
+            width: 100%;
+            padding: 16px;
+        }
 
-        .mo_header > section {
+        .mo_header>div {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            border-bottom: #ddd 1px solid;
+            padding: 16px;
         }
 
         .mo_header_r_box {
             display: flex;
             justify-content: space-between;
+            border-bottom: #ddd 1px solid;
+
         }
 
-        .mo_header {
-            display: none;
-        }
 
         @media (max-width: 1440px) {
             .mo_header {
-                display: flex;
-                justify-content: space-between;
+                display: block
             }
 
             .pc_header {
@@ -122,87 +132,88 @@
 <body>
     <header>
         <div class="pc_header">
-        <section>
-            <h1>kakao</h1>
-            <ul>
-                <li>
-                    <a href="#">
-                        소개
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        이야기
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        기술과 서비스
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        약속과 책임
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        뉴스
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        투자정보
-                    </a>
-                </li>
-            </ul>
-            <div class="header1_right_box">
-                <figure>
-                    <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
-                </figure>
-                <figure>
-                    <i class="fa-solid fa-globe fa-2xl"></i>
-                </figure>
-                <figure>
-                    <i class="fa-regular fa-moon fa-2xl"></i>
-                </figure>
-            </div>
-        </section>
-        <article>
-            <h2>카카오톡</h2>
-            <div class="header2_right_box">
-                <p>카톡 안녕가이드</p>
-                <p>카톡설명서</p>
-                <p>다운로드
-                    <span>
-                        <i class="fa-solid fa-download"></i>
-                    </span>
-                </p>
-            </div>
-        </article>
-    </div>
-    <div class="mo_header">
-        <section>
-            <h1>kakao</h1>
-            <figure>
-                <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
-            </figure>
-            <figure>
-                <i class="fa-solid fa-burger fa-2xl"></i>
-            </figure>
-            <hr>
-            <div class="mo_header_r_box">
+            <section>
+                <h1>kakao</h1>
+                <ul>
+                    <li>
+                        <a href="#">
+                            소개
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            이야기
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            기술과 서비스
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            약속과 책임
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            뉴스
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            투자정보
+                        </a>
+                    </li>
+                </ul>
+                <div class="header1_right_box">
+                    <figure>
+                        <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+                    </figure>
+                    <figure>
+                        <i class="fa-solid fa-globe fa-2xl"></i>
+                    </figure>
+                    <figure>
+                        <i class="fa-regular fa-moon fa-2xl"></i>
+                    </figure>
+                </div>
+            </section>
+            <article>
                 <h2>카카오톡</h2>
-                <div>
+                <div class="header2_right_box">
+                    <p>카톡 안녕가이드</p>
+                    <p>카톡설명서</p>
                     <p>다운로드
                         <span>
                             <i class="fa-solid fa-download"></i>
                         </span>
                     </p>
                 </div>
+            </article>
+        </div>
+        <div class="mo_header">
+            <!-- <section> -->
+            <div>
+                <h1>kakao</h1>
+                <figure>
+                    <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+                </figure>
+                <figure>
+                    <i class="fa-solid fa-burger fa-2xl"></i>
+                </figure>
             </div>
-        </section>
-    </div>
+            
+            <div class="mo_header_r_box">
+                <h2>카카오톡</h2>
+                <p>다운로드
+                    <span>
+                        <i class="fa-solid fa-download"></i>
+                    </span>
+                </p>
+
+            </div>
+            <!-- </section> -->
+        </div>
     </header>
 </body>
 
