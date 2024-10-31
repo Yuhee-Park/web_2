@@ -82,11 +82,46 @@
         @media (max-width: 1440px) {
             
         }
+
+        /* .mo_header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+            margin: 16px;
+        } */
+
+        .mo_header > section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .mo_header_r_box {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .mo_header {
+            display: none;
+        }
+
+        @media (max-width: 1440px) {
+            .mo_header {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .pc_header {
+                display: none;
+            }
+        }
     </style>
 </head>
 
 <body>
     <header>
+        <div class="pc_header">
         <section>
             <h1>kakao</h1>
             <ul>
@@ -145,6 +180,29 @@
                 </p>
             </div>
         </article>
+    </div>
+    <div class="mo_header">
+        <section>
+            <h1>kakao</h1>
+            <figure>
+                <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+            </figure>
+            <figure>
+                <i class="fa-solid fa-burger fa-2xl"></i>
+            </figure>
+            <hr>
+            <div class="mo_header_r_box">
+                <h2>카카오톡</h2>
+                <div>
+                    <p>다운로드
+                        <span>
+                            <i class="fa-solid fa-download"></i>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
     </header>
 </body>
 
