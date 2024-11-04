@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버밴드실습</title>
+    <script src="https://kit.fontawesome.com/386b64400f.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            width: 100px;
+            height: 50px;
+            background-color: #fff;
+            background-image: url(./밴드로고.png);
+            background-size: contain;
+        }
+
+        header > ul {
+            display: flex;
+            margin: 16px;
+        }
+
+        header > ul > li {
+            list-style: none;
+            align-items: center;
+            
+        }
+
+        header > ul > li:nth-child(3) {
+            width: 80px;
+            height: 30px;
+            background-color: rgb(51, 232, 42);
+            text-align: center;
+        }
+
+        header > ul > li > a {
+            list-style: none;
+            text-decoration: none;
+            margin: 16px;
+            color: black;
+            font-size: 14px;
+        }
+
+        
+        header > ul > li > a:nth-child(3) {
+            color: #fff;
+        }
+
+        section {
+            width: 100%;
+            align-items: 50%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .img_box {
+            background-image: url(./밴드이미지1.jpg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 500px;
+            height: 700px;
+        }
+
+        .text_box {
+            width: 500px;
+            height: 700px;
+            margin-top: 200px;
+            margin-left: 70px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo"></h1>
+        <ul>
+            <li>
+                <a href="#">한국어
+                    <i class="fa-solid fa-sort-down"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">회원가입</a>
+            </li>
+            <li>
+                <a href="#">로그인</a>
+            </li>
+        </ul>
+    </header>
+
+    <section>
+        <div class="img_box"></div>
+        <div class="text_box">
+            <h2>모임이 쉬워진다! <br>
+            우리끼리 밴드</h2>
+            <h3>당신의 모임도 밴드로 시작하세요</h3>
+            <div class="login_box">로그인</div>
+            <div class="sign_box">회원가입</div>
+            <div>
+                <ul>
+                    <li>내게 맞는 밴드를 만나려면
+                        <a href="#">
+                            밴드찾기
+                        </a>
+                    </li>
+                    <li>모임별 밴드 활용법
+                        <a href="#">
+                            밴드 가이드 보기
+                        </a>
+                    </li>
+                    <li>만 13세 미만이라면?
+                        <a href="#">
+                            '밴드 키즈'알아보기
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
