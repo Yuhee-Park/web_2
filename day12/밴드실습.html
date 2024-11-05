@@ -30,20 +30,21 @@
             margin: 16px;
         }
 
-        header>ul>li {
+        header > ul > li {
             list-style: none;
             align-items: center;
 
         }
 
-        header>ul>li:nth-child(3) {
+
+        header > ul > li:nth-child(3) {
             width: 80px;
             height: 30px;
             background-color: rgb(82, 215, 75);
             text-align: center;
         }
 
-        header>ul>li>a {
+        header > ul > li > a {
             list-style: none;
             text-decoration: none;
             margin: 16px;
@@ -52,7 +53,7 @@
         }
 
 
-        header>ul>li>a:nth-child(3) {
+        header > ul > li> a:nth-child(3) {
             color: #fff;
         }
 
@@ -64,13 +65,21 @@
             height: 700px;
         }
 
-        h2 {
+        .text_box {
+            width: 500px;
+            height: 700px;
+            margin-top: 200px;
+            margin-left: 70px;
+            text-align: center;
+        }
+
+        .text_box > h2 {
             font-size: 42px;
             font-weight: bold;
             margin-bottom: 20px;
         }
 
-        h3 {
+        p {
             font-weight: normal;
             margin-bottom: 20px;
         }
@@ -84,7 +93,7 @@
             margin-bottom: 20px;
         }
 
-        .login_box>a {
+        .login_box > a {
             text-decoration: none;
             color: #fff;
             text-align: center;
@@ -100,11 +109,24 @@
             margin-bottom: 40px;
         }
 
-        .guide_box>ul {
+        .guide_box {
+            width: 300px;
+            height: 50px;
+            background-color: #fdfdfd;
+            position: absolute;
+           
+        }
+
+        .guide_box > li {
             list-style: none;
         }
 
-        .guide_box>ul>li>a {
+        .guide_box > li > p {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .guide_box > li > p > a {
             color: rgb(82, 215, 75);
         }
 
@@ -117,13 +139,6 @@
             height: 700px;
         }
 
-        .text_box {
-            width: 500px;
-            height: 700px;
-            margin-top: 200px;
-            margin-left: 70px;
-        }
-
         .container {
             background-image: url(./밴드이미지2.jpg);
             background-position: center;
@@ -134,7 +149,19 @@
             position: relative
         }
 
-        .container > div {
+        .container > h2 {
+            padding: 16px;
+        }
+
+        .container > h2, p {
+            color: #fff;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        .container > p {
             color: #fff;
             position: absolute;
             top: 50%;
@@ -146,7 +173,7 @@
             display: flex;
         }
 
-        .container2 > ul > li {
+        .container2>ul>li {
             width: 300px;
             height: 250px;
             margin: 0 24px;
@@ -154,7 +181,7 @@
             list-style: none;
         }
 
-        .container2 > ul > li:nth-child(1) {
+        .container2>ul>li:nth-child(1) {
             background-image: url(./img_seo01.jpg);
             background-size: 300px 150px;
             background-size: contain 100%;
@@ -168,8 +195,28 @@
         <h1 class="logo"></h1>
         <ul>
             <li>
-                <a href="#">한국어
-                    <i class="fa-solid fa-sort-down"></i>
+                <a href="#">
+                    한국어
+                    <select name="language" id="언어">
+                        <option value="#">
+                            English
+                        </option>
+                        <option value="#">
+                            한국어
+                        </option>
+                        <option value="#">
+                            日本語
+                        </option>
+                        <option value="#">
+                            Español
+                        </option>
+                        <option value="#">
+                            繁體中文
+                        </option>
+                        <option value="#">
+                            Bahasa Indonesia
+                        </option>
+                    </select>
                 </a>
             </li>
             <li>
@@ -182,52 +229,69 @@
     </header>
 
     <section>
-        <div class="img_box"></div>
+        <figure class="img_box"></figure>
         <div class="text_box">
-            <h2>모임이 쉬워진다! <br>
-                우리끼리 밴드</h2>
-            <h3>당신의 모임도 밴드로 시작하세요</h3>
-            <div class="login_box">
-                <a href="#">
-                    로그인
-                </a>
+            <h2>
+                모임이 쉬워진다!
+                <br>
+                우리끼리 밴드
+            </h2>
+
+            <p>
+                당신의 모임도 밴드로 시작하세요
+            </p>
+
+            <div>
+                <div class="login_box">
+                    <a href="#">
+                        로그인
+                    </a>
+                </div>
+                <div class="sign_box">
+                    <a href="#">
+                        회원가입
+                    </a>
+                </div>
             </div>
-            <div class="sign_box">
-                <a href="#">
-                    회원가입
-                </a>
-            </div>
-            <div class="guide_box">
-                <ul>
-                    <li>내게 맞는 밴드를 만나려면
+
+            <ul class="guide_box">
+                <li>
+                    <p>
+                        내게 맞는 밴드를 만나려면
                         <a href="#">
                             밴드찾기
                         </a>
-                    </li>
-                    <li>모임별 밴드 활용법
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        모임별 밴드 활용법
                         <a href="#">
                             밴드 가이드 보기
                         </a>
-                    </li>
-                    <li>만 13세 미만이라면?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        만 13세 미만이라면?
                         <a href="#">
                             '밴드 키즈'알아보기
                         </a>
-                    </li>
-                </ul>
-            </div>
+                    </p>
+                </li>
+            </ul>
+
         </div>
     </section>
 
     <section>
         <div class="container">
-            <div>
-                <h2>모임을 위한 공간, 밴드</h2>
-                <div>밴드는 그룹 멤버와 함께 하는 공간입니다.
-                    <br>
-                    동호회, 스터디, 주제별 모임을 밴드로 시작하세요.
-                </div>
-            </div>
+            <h2>모임을 위한 공간, 밴드</h2>
+            <p>
+                밴드는 그룹 멤버와 함께 하는 공간입니다.
+                <br>
+                동호회, 스터디, 주제별 모임을 밴드로 시작하세요.
+            </p>
         </div>
     </section>
 
