@@ -66,11 +66,10 @@
         }
 
         .text_box {
-            width: 500px;
-            height: 700px;
-            margin-top: 200px;
+            width: 400px;
+            height: 600px;
             margin-left: 70px;
-            text-align: center;
+            align-items: center;
         }
 
         .text_box > h2 {
@@ -79,9 +78,10 @@
             margin-bottom: 20px;
         }
 
-        p {
+        .text_box > span {
             font-weight: normal;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            display: block;
         }
 
         .login_box {
@@ -109,22 +109,29 @@
             margin-bottom: 40px;
         }
 
+        .sign_box > a {
+            text-decoration: none;
+            color: black;
+        }
+
         .guide_box {
             width: 300px;
-            height: 50px;
+            height: 150px;
             background-color: #fdfdfd;
-            position: absolute;
+            position: relative;
            
         }
 
         .guide_box > li {
             list-style: none;
+            position: absolute;
+            top: 10px;
         }
 
         .guide_box > li > p {
             display: flex;
-            flex-wrap: wrap;
         }
+
 
         .guide_box > li > p > a {
             color: rgb(82, 215, 75);
@@ -237,9 +244,9 @@
                 우리끼리 밴드
             </h2>
 
-            <p>
+            <span>
                 당신의 모임도 밴드로 시작하세요
-            </p>
+            </span>
 
             <div>
                 <div class="login_box">
