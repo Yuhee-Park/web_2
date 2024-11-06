@@ -15,14 +15,17 @@
         header {
             display: flex;
             justify-content: space-between;
+            margin: 16px;
+            align-items: center;
         }
 
         .logo {
-            width: 100px;
-            height: 50px;
+            width: 78px;
+            height: 29px;
             background-color: #fff;
-            background-image: url(./밴드로고.png);
-            background-size: contain;
+            background-image: url(./spr_intro_2x.png);
+            background-position: 0 -96px;
+            background-size: 231px auto;
         }
 
         header>ul {
@@ -30,21 +33,21 @@
             margin: 16px;
         }
 
-        header > ul > li {
+        header>ul>li {
             list-style: none;
             align-items: center;
 
         }
 
 
-        header > ul > li:nth-child(3) {
+        header>ul>li:nth-child(3) {
             width: 80px;
             height: 30px;
             background-color: rgb(82, 215, 75);
             text-align: center;
         }
 
-        header > ul > li > a {
+        header>ul>li>a {
             list-style: none;
             text-decoration: none;
             margin: 16px;
@@ -53,16 +56,17 @@
         }
 
 
-        header > ul > li> a:nth-child(3) {
+        header>ul>li>a:nth-child(3) {
             color: #fff;
         }
+
+
 
         section {
             width: 100%;
             align-items: 50%;
             display: flex;
             justify-content: center;
-            height: 700px;
         }
 
         .text_box {
@@ -70,15 +74,16 @@
             height: 600px;
             margin-left: 70px;
             align-items: center;
+            position: relative;
         }
 
-        .text_box > h2 {
+        .text_box>h2 {
             font-size: 42px;
             font-weight: bold;
             margin-bottom: 20px;
         }
 
-        .text_box > span {
+        .text_box>span {
             font-weight: normal;
             margin-bottom: 30px;
             display: block;
@@ -93,7 +98,7 @@
             margin-bottom: 20px;
         }
 
-        .login_box > a {
+        .login_box>a {
             text-decoration: none;
             color: #fff;
             text-align: center;
@@ -109,7 +114,7 @@
             margin-bottom: 40px;
         }
 
-        .sign_box > a {
+        .sign_box>a {
             text-decoration: none;
             color: black;
         }
@@ -119,22 +124,21 @@
             height: 150px;
             background-color: #fdfdfd;
             position: relative;
-           
         }
 
-        .guide_box > li {
+        .guide_box>li {
             list-style: none;
-            position: absolute;
-            top: 10px;
         }
 
-        .guide_box > li > p {
-            display: flex;
+        .guide_box>li>p {
+            top: 0px;
+            left: 0;
         }
 
-
-        .guide_box > li > p > a {
+        .guide_box>li>p>a {
             color: rgb(82, 215, 75);
+            top: 0;
+            right: 0;
         }
 
         .img_box {
@@ -146,7 +150,9 @@
             height: 700px;
         }
 
-        .container {
+
+
+        .img_section {
             background-image: url(./밴드이미지2.jpg);
             background-position: center;
             background-size: contain 100%;
@@ -156,43 +162,147 @@
             position: relative
         }
 
-        .container > h2 {
+        .img_section>h2 {
             padding: 16px;
+            font-size: 40px;
         }
 
-        .container > h2, p {
+        .img_section>h2,
+        p {
             color: #fff;
             position: absolute;
-            top: 40%;
+            top: 38%;
             left: 50%;
             transform: translate(-50%);
         }
 
-        .container > p {
+        .img_section>p {
             color: #fff;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%);
+            text-align: center;
         }
 
-        .container2 > ul {
+
+
+        .container {
+            margin: 20px;
+            height: 300px;
+        }
+
+        .container>ul {
             display: flex;
         }
 
-        .container2>ul>li {
+        .container>ul>li {
             width: 300px;
             height: 250px;
             margin: 0 24px;
-            background-color: bisque;
             list-style: none;
+            position: relative;
         }
 
-        .container2>ul>li:nth-child(1) {
+        .container>ul>li>h3 {
+            align-items: end;
+            position: absolute;
+            top: 160px;
+            font-size: 24px;
+        }
+
+        .container>ul>li>p {
+            align-items: end;
+            position: absolute;
+            top: 200px;
+            color: #000;
+            text-align: left;
+            width: 300px;
+            font-size: 15px;
+
+        }
+
+        .container>ul>li:nth-child(1) {
             background-image: url(./img_seo01.jpg);
             background-size: 300px 150px;
             background-size: contain 100%;
             background-repeat: no-repeat;
+        }
+
+        .container>ul>li:nth-child(2) {
+            background-image: url(./img_seo02.jpg);
+            background-size: 300px 150px;
+            background-size: contain 100%;
+            background-repeat: no-repeat;
+        }
+
+        .container>ul>li:nth-child(3) {
+            background-image: url(./img_seo03.jpg);
+            background-size: 300px 150px;
+            background-size: contain 100%;
+            background-repeat: no-repeat;
+        }
+
+
+
+        .last_section {
+            width: 100%;
+            height: 700px;
+            background-color: #f3f3f3;
+        }
+
+        .last_header {
+            display: flex;
+            justify-content: space-between;
+            width: 1000px;
+            align-items: center;
+        }
+
+        .last_header > h2 {
+            padding: 24px;
+            font-weight: normal;
+            font-size: 30px;
+        }
+
+        .last_header > h3 {
+            padding: 24px;
+            font-weight: normal;
+            font-size: 16px;
+        }
+
+        .last_section > div > figure {
+            display: flex;
+            width: 500px;
+            height: 100px;
+            background-color: rgb(232, 143, 190);
+            margin: 32px;
+        }
+
+        .last_img_box {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            background-color: beige;
+            background-image: url(./img_seo01.jpg);
+            background-size: cover;
+
+        }
+
+        .last_img_box2 {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            background-color: beige;
+            background-image: url(./img_seo02.jpg);
+            background-size: cover;
+        }
+
+        .last_text_box {
+            width: 400px;
+            height: 100px;
+            border-radius: 10px;
+            background-color: rgb(220, 245, 225);
+            margin-left: 16px;
         }
     </style>
 </head>
@@ -292,7 +402,7 @@
     </section>
 
     <section>
-        <div class="container">
+        <div class="img_section">
             <h2>모임을 위한 공간, 밴드</h2>
             <p>
                 밴드는 그룹 멤버와 함께 하는 공간입니다.
@@ -303,7 +413,7 @@
     </section>
 
     <section>
-        <div class="container2">
+        <div class="container">
             <ul>
                 <li>
                     <h3>어떤 모임이라도!</h3>
@@ -327,29 +437,25 @@
         </div>
     </section>
 
-    <section>
-        <div class="container3">
-            <div class="text_box2">
-                <h3>이런 밴드는 어때요</h3>
-                <p>
-                    <a href="#">
-                        모두보기
-                    </a>
-                </p>
+    <section class="last_section">
+        <div>
+            <div class="last_header">
+                <h2>
+                    이런 밴드는 어때요
+                </h2>
+                <h3>
+                    모두보기
+                </h3>
             </div>
-            <div class="img_box2">
-                <a href="#">
-                </a>
-                <div class="text_box3">
+
+            <figure>
+                <div class="last_img_box"></div>
+                <div class="last_text_box">
                     <h4>
-                        <a href="#">
-                            매일 크로키하기
-                        </a>
+                        매일 크로키하기
                     </h4>
                     <p>
-                        <a href="#">
-                            매일 크로키
-                        </a>
+                        매일 크로키
                     </p>
                     <p>
                         <a href="#">
@@ -365,7 +471,32 @@
                         </a>
                     </p>
                 </div>
-            </div>
+            </figure>
+
+            <figure>
+                <div class="last_img_box2"></div>
+                <div class="last_text_box">
+                    <h4>
+                        매일 크로키하기
+                    </h4>
+                    <p>
+                        매일 크로키
+                    </p>
+                    <p>
+                        <a href="#">
+                            멤버679
+                            <span>
+                                리더 먕
+                            </span>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#">
+                            크로키 그림 밴드 더보기
+                        </a>
+                    </p>
+                </div>
+            </figure>
         </div>
     </section>
 </body>
