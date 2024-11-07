@@ -11,62 +11,91 @@
             padding: 0;
             margin: 0;
         }
-
-        header {
+/* 헤더시작 */
+        header,
+        header>ul {
             display: flex;
             justify-content: space-between;
-            margin: 16px;
             align-items: center;
+            background-color: #f5f6f8;
+        }
+
+        header {
+            padding: 16px;
         }
 
         .logo {
             width: 78px;
             height: 29px;
-            background-color: #fff;
+            /* background-color: #fff; */
             background-image: url(./spr_intro_2x.png);
             background-position: 0 -96px;
             background-size: 231px auto;
         }
 
-        header>ul {
-            display: flex;
-            margin: 16px;
+        .launguage {
+            border: none;
+            outline: none;
+            background-color: #f5f6f8;
+            cursor: pointer;
         }
+
+        .launguage:hover {
+            text-decoration: underline;
+        }
+
 
         header>ul>li {
             list-style: none;
             align-items: center;
+            font-size: 14px;
 
         }
 
-
-        header>ul>li:nth-child(3) {
-            width: 80px;
-            height: 30px;
-            background-color: rgb(82, 215, 75);
-            text-align: center;
-        }
-
-        header>ul>li>a {
+        header>ul>li:nth-child(1),
+        header>ul>li:nth-child(2) {
             list-style: none;
-            text-decoration: none;
             margin: 16px;
-            color: black;
             font-size: 14px;
         }
 
-
-        header>ul>li>a:nth-child(3) {
-            color: #fff;
+        header>ul>li:nth-child(1),
+        li:nth-child(2)>a {
+            text-decoration: none;
+            color: black;
         }
 
+        header>ul>li:nth-child(3) {
+            list-style: none;
+            margin: 16px;
+            font-size: 14px;
+            width: 80px;
+            height: 30px;
+            text-align: center;
+            line-height: center;
+        }
+
+        header>ul>li:nth-child(3)>a {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            background-color: rgb(82, 215, 75);
+            border-radius: 3px;
+        }
+/* 헤더 끝 */
 
 
-        section {
+        .main_container {
+            background-color: #f5f6f8;
             width: 100%;
             align-items: 50%;
             display: flex;
             justify-content: center;
+        }
+
+        .img_box {
+            width: 540px;
+            height: 695px;
         }
 
         .text_box {
@@ -74,6 +103,8 @@
             height: 600px;
             margin-left: 70px;
             align-items: center;
+            line-height: center;
+            background-color: #f5f6f8;
             /* position: relative; */
         }
 
@@ -89,6 +120,11 @@
             display: block;
         }
 
+        
+        .sign_container {
+            margin: 16px 0;
+        }
+
         .login_box {
             width: 300px;
             height: 50px;
@@ -102,199 +138,220 @@
             text-decoration: none;
             color: #fff;
             text-align: center;
-        }
-
-        .sign_box {
+            display: inline-block;
             width: 300px;
             height: 50px;
-            background-color: #fdfdfd;
-            text-align: center;
-            font-weight: bold;
-            border: #ddd 1px solid;
-            margin-bottom: 40px;
+            line-height: 50px;
         }
 
+        .login_box>a,
         .sign_box>a {
-            text-decoration: none;
-            color: black;
+            display: inline-block;
+            width: 300px;
+            height: 50px;
+            line-height: 50px;
         }
 
-        .guide_box {
-
+        header>ul>li:last-child>a {
+            display: inline-block;
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
         }
 
-        .guide_box>li {
-            list-style: none;
-        }
+            .sign_box {
+                width: 300px;
+                height: 50px;
+                background-color: #fdfdfd;
+                text-align: center;
+                font-weight: bold;
+                border: #ddd 1px solid;
+                margin-bottom: 40px;
+            }
 
-        .guide_box>li>p {
+            .sign_box>a {
+                text-decoration: none;
+                color: black;
+            }
 
-        }
+            .guide_box {
+                text-align: left;
+            }
 
-        .guide_box>li>p>a {
-            color: rgb(82, 215, 75);
+            .guide_box>li {
+                list-style: none;
+                margin: 8px 0;
+            }
 
-        }
+            /* .guide_box>li:nth-child(3)>p {
+                margin: 0;
+            } */
 
-        .img_box {
-            background-image: url(./밴드이미지1.jpg);
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 500px;
-            height: 700px;
-        }
+            .guide_box>li>p>a {
+                color: rgb(82, 215, 75);
+
+            }
+
+            .img_box {
+                background-image: url(./밴드이미지1.jpg);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 500px;
+                height: 700px;
+                background-color: #f5f6f8;
+            }
+
+            .img_container {
+                background-image: url(./밴드이미지2.jpg);
+                background-position: center;
+                background-size: contain 100%;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 800px;
+            }
 
 
+            .img_section>h2 {
+                padding: 16px;
+                font-size: 40px;
+            }
 
-        .img_section {
-            background-image: url(./밴드이미지2.jpg);
-            background-position: center;
-            background-size: contain 100%;
-            background-repeat: no-repeat;
-            width: 100%;
-            height: 800px;
-            /* position: relative */
-        }
-
-        .img_section>h2 {
-            padding: 16px;
-            font-size: 40px;
-        }
-
-        .img_section>h2,
-        p {
-            color: #000000;
-            /* position: absolute;
+            .img_section>h2,
+            p {
+                color: #000000;
+                /* position: absolute;
             top: 38%;
             left: 50%; */
-            /* transform: translate(-50%); */
-        }
+                /* transform: translate(-50%); */
+            }
 
-        .img_section>p {
-            color: #000000;
-            /* position: absolute;
+            .img_section>p {
+                color: #000000;
+                /* position: absolute;
             top: 50%;
             left: 50%; */
-            /* transform: translate(-50%); */
-            text-align: center;
-        }
+                /* transform: translate(-50%); */
+                text-align: center;
+            }
 
 
 
-        .container {
-            margin: 20px;
-            height: 300px;
-        }
+            .container {
+                margin: 20px;
+                height: 300px;
+            }
 
-        .container>ul {
-            display: flex;
-        }
+            .container>ul {
+                display: flex;
+            }
 
-        .container>ul>li {
-            width: 300px;
-            height: 250px;
-            margin: 0 24px;
-            list-style: none;
-            /* position: relative; */
-        }
+            .container>ul>li {
+                width: 300px;
+                height: 250px;
+                margin: 0 24px;
+                list-style: none;
+                /* position: relative; */
+            }
 
-        .container>ul>li>h3 {
-            align-items: end;
-            /* position: absolute; */
-            /* top: 160px; */
-            font-size: 24px;
-        }
+            .container>ul>li>h3 {
+                align-items: end;
+                /* position: absolute; */
+                /* top: 160px; */
+                font-size: 24px;
+            }
 
-        .container>ul>li>p {
-            align-items: end;
-            /* position: absolute; */
-            /* top: 200px; */
-            color: #000;
-            text-align: left;
-            width: 300px;
-            font-size: 15px;
+            .container>ul>li>p {
+                align-items: end;
+                /* position: absolute; */
+                /* top: 200px; */
+                color: #000;
+                text-align: left;
+                width: 300px;
+                font-size: 15px;
 
-        }
+            }
 
-        .container>ul>li:nth-child(1) {
-            background-image: url(./img_seo01.jpg);
-            background-size: 300px 150px;
-            background-size: contain 100%;
-            background-repeat: no-repeat;
-        }
+            .function_list > figure:nth-child(1) {
+                background-image: url(./img_seo01.jpg);
+                background-size: 300px 150px;
+                background-size: contain 100%;
+                background-repeat: no-repeat;
+            }
 
-        .container>ul>li:nth-child(2) {
-            background-image: url(./img_seo02.jpg);
-            background-size: 300px 150px;
-            background-size: contain 100%;
-            background-repeat: no-repeat;
-        }
+            .container>ul>li:nth-child(2) {
+                background-image: url(./img_seo02.jpg);
+                background-size: 300px 150px;
+                background-size: contain 100%;
+                background-repeat: no-repeat;
+            }
 
-        .container>ul>li:nth-child(3) {
-            background-image: url(./img_seo03.jpg);
-            background-size: 300px 150px;
-            background-size: contain 100%;
-            background-repeat: no-repeat;
-        }
+            .container>ul>li:nth-child(3) {
+                background-image: url(./img_seo03.jpg);
+                background-size: 300px 150px;
+                background-size: contain 100%;
+                background-repeat: no-repeat;
+            }
 
 
 
-        .last_section {
-            width: 100%;
-            height: 700px;
-            background-color: #f3f3f3;
-        }
+            .last_section {
+                width: 100%;
+                height: 700px;
+                background-color: #f3f3f3;
+            }
 
-        .last_header {
-            display: flex;
-            justify-content: space-between;
-            width: 1000px;
-            align-items: center;
-        }
+            .last_header {
+                display: flex;
+                justify-content: space-between;
+                width: 1000px;
+                align-items: center;
+            }
 
-        .last_header > h2 {
-            padding: 24px;
-            font-weight: normal;
-            font-size: 30px;
-        }
+            .last_header>h2 {
+                padding: 24px;
+                font-weight: normal;
+                font-size: 30px;
+            }
 
-        .last_header > h3 {
-            padding: 24px;
-            font-weight: normal;
-            font-size: 16px;
-        }
+            .last_header>h3 {
+                padding: 24px;
+                font-weight: normal;
+                font-size: 16px;
+            }
 
-        .last_section > div > figure {
-            display: flex;
-            width: 500px;
-            height: 100px;
-            margin: 32px;
-        }
+            .last_section>div>figure {
+                display: flex;
+                width: 500px;
+                height: 100px;
+                margin: 32px;
+            }
 
-        .last_img_box {
-            width: 100px;
-            height: 100px;
-            border-radius: 10px;
-            background-image: url(./img_seo01.jpg);
-            background-size: cover;
+            .last_img_box {
+                width: 100px;
+                height: 100px;
+                border-radius: 10px;
+                background-image: url(./img_seo01.jpg);
+                background-size: cover;
 
-        }
+            }
 
-        .last_img_box2 {
-            width: 100px;
-            height: 100px;
-            border-radius: 10px;
-            background-image: url(./img_seo02.jpg);
-            background-size: cover;
-        }
+            .last_img_box2 {
+                width: 100px;
+                height: 100px;
+                border-radius: 10px;
+                background-image: url(./img_seo02.jpg);
+                background-size: cover;
+            }
 
-        .last_text_box {
-            width: 400px;
-            height: 100px;
-            border-radius: 10px;
-            margin-left: 16px;
-        }
+            .last_text_box {
+                width: 400px;
+                height: 100px;
+                border-radius: 10px;
+                margin-left: 16px;
+            }
+
+
     </style>
 </head>
 
@@ -304,12 +361,13 @@
         <ul>
             <li>
                 <a href="#">
-                    한국어
-                    <select name="language" id="언어">
+                    <select name="" id="언어" class="launguage">
+                        <!-- 클래스를 부여한 후 스타일 작성 -->
                         <option value="#">
                             English
                         </option>
-                        <option value="#">
+                        <option value="#" selected>
+                            <!-- 한국어가 보이게 하는 기능 : 셀렉티드, -->
                             한국어
                         </option>
                         <option value="#">
@@ -336,7 +394,7 @@
         </ul>
     </header>
 
-    <section>
+    <section class="main_container">
         <figure class="img_box"></figure>
         <div class="text_box">
             <h2>
@@ -349,7 +407,7 @@
                 당신의 모임도 밴드로 시작하세요
             </span>
 
-            <div>
+            <div class="sign_container">
                 <div class="login_box">
                     <a href="#">
                         로그인
@@ -392,33 +450,34 @@
         </div>
     </section>
 
-    <section>
-        <div class="img_section">
+    <section class="img_container">
             <h2>모임을 위한 공간, 밴드</h2>
             <p>
                 밴드는 그룹 멤버와 함께 하는 공간입니다.
                 <br>
                 동호회, 스터디, 주제별 모임을 밴드로 시작하세요.
             </p>
-        </div>
     </section>
 
     <section>
         <div class="container">
             <ul>
-                <li>
+                <li class="function_list">
+                    <figure></figure>
                     <h3>어떤 모임이라도!</h3>
                     <p>친구, 가족, 동료 등 함께 하고 싶은 사람과
                         <br>우리만의 공간을 만들어보세요.
                     </p>
                 </li>
-                <li>
+                <li class="function_list">
+                    <figure></figure>
                     <h3>모임에 딱 맞는 기능들</h3>
                     <p>투표로 의견을 모으고, 함께 일정을 공유하며
                         <br>게시판과 앨범에는 추억을 쌓아보세요
                     </p>
                 </li>
-                <li>
+                <li class="function_list">
+                    <figure></figure>
                     <h3>내가 원하는 모임 찾기</h3>
                     <p>취미, 스포츠, 또래 모임 등
                         <br>나와 같은 관심사 밴드를 찾을 수 있어요
@@ -491,18 +550,37 @@
         </div>
     </section>
 
-    <section>
-        <div>
-            <div class="band_logo">
-            </div>
-            <div class="text_box">
+    <section class="download_container">
+        <div class="download_left">
+           <figure></figure>
+            <div>
                 <h2>밴드앱을 다운로드 하세요!</h2>
                 <p>당신의 모임도 BAND로 시작하세요</p>
             </div>
         </div>
+        <div class="download_store">
+            <a href=""></a>
+            <a href=""></a>
+        </div>
     </section>
 
-    <footer></footer>
+    <footer>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <p>BAND © 2024</p>
+        </ul>
+    </footer>
 </body>
 
 </html>
